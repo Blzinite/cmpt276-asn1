@@ -7,7 +7,8 @@ h2 {
     height: 95vh;
     background: #93262B;
     border-radius: 5px;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .border {
@@ -51,19 +52,24 @@ input[type="number"] {
     width: 64px;
 }
 
+input[type="button"] {
+    margin-top: 16px;
+}
+
 .button-holder {
     display: flex;
     justify-content: right;
 }
 
 form {
-    overflow-x: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .button-holder input {
     background: #A2251F;
     color: white;
-    border: white 2px solid;
+    border: white 1px solid;
     border-radius: 4px;
     padding: 8px;
     margin: 4px;
