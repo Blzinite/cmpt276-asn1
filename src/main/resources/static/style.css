@@ -7,6 +7,7 @@ h2 {
     height: 95vh;
     background: #93262B;
     border-radius: 5px;
+    overflow-y: hidden;
 }
 
 .border {
@@ -53,6 +54,10 @@ input[type="number"] {
 .button-holder {
     display: flex;
     justify-content: right;
+}
+
+form {
+    overflow-x: hidden;
 }
 
 .button-holder input {
