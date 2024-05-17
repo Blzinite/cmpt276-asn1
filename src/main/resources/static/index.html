@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/js/script.js" defer></script>
+<body>
+    <main class="backdrop">
+        <div class="border">
+            <div class="surface">
+                <h1>Grade Calculator</h1>
+                <div class="interface">
+                    <h2>Activities</h2>
+                    <p>give grades to the numeric activities</p>
+                    <form action="/submit">
+                        <table>
+                            <tr><th>Name</th><th>Short Name</th><th>Weight</th><th>Grade</th><th>Percent</th></tr>
+                            <tr>
+                                <td>Activity 1</td>
+                                <td>A1</td>
+                                <td>
+                                    <input type="number">
+                                </td>
+                                <td>
+                                    <input type="number" onchange="calculatePercentage(1);">
+                                    /
+                                    <input type="number" onchange="calculatePercentage(1);">
+                                <td id="A1-percent">
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="ADD ROW">
+                        <h2>Result</h2>
+                        <h3 id="result"></h3>
+                        <div class="button-holder">
+                            <input type="submit" value="WEIGHTED">
+                            <input type="submit" value="MEAN">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; Copyright 2024 ShiYu Feng</footer>
+</body>
+</html>
