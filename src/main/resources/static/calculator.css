@@ -54,6 +54,7 @@ input[type="number"] {
 
 input[type="button"] {
     margin-top: 16px;
+    width: 128px;
 }
 
 .button-holder {
@@ -77,4 +78,8 @@ form {
 
 h1 {
     font-family: 'Arial', sans-serif;
+}
+
+tbody {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

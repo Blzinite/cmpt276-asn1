@@ -28,7 +28,7 @@ function calculatePercentage(index) {
     // 0 is weight, 1 is numerator and 2 is denominator
     // following the logic 3+0 is the second weight, 3+1 is the second....
     // so 3*index+1 gets the numerator of the index's row
-    ans.innerText = numbers[3*(index-1)+1].value/numbers[3*(index-1)+2].value
+    ans.innerText = (numbers[3*(index-1)+1].value/numbers[3*(index-1)+2].value).toFixed(2)
 }
 
 function calculateMean() {
@@ -39,8 +39,8 @@ function calculateMean() {
         sum += Number(document.getElementById("A"+i+"-percent").innerText)
     }
     // Sum divide by amount of rows
-    let ans = sum / rows
-    document.getElementById("result").innerText = ans+" ("+ ans*100 +"/100)"
+    let ans = (sum / rows).toFixed(2)
+    document.getElementById("result").innerText = ans+" ("+ (ans*100).toFixed(2) +"/100)"
 }
 
 function calculateWeighted() {
@@ -53,8 +53,8 @@ function calculateWeighted() {
         sum += numbers[3*(i-1)].value * Number(document.getElementById("A"+i+"-percent").innerText)
     }
     // sum divided by weights
-    let ans = sum / weights
-    document.getElementById("result").innerText = ans+" ("+ ans*100 +"/100)"
+    let ans = (sum / weights).toFixed(2)
+    document.getElementById("result").innerText = ans+" ("+ (ans*100).toFixed(2) +"/100)"
 }
 
 // Add pre-defined rows
