@@ -4,7 +4,7 @@
  */
 
 const table = document.getElementsByTagName("table")[0]
-let rows = 2
+let rows = 1
 
 // Function to add a data table row
 function addFormattedRow(index) {
@@ -56,12 +56,6 @@ function calculateWeighted() {
     let ans = (sum / weights).toFixed(2)
     document.getElementById("result").innerText = ans+" ("+ (ans*100).toFixed(2) +"/100)"
 }
-
-// Add pre-defined rows
-for (let i=1; i<rows; i++) {
-    addFormattedRow(i+1)
-}
-
 
 // Event Listeners
 let addRow = document.querySelector('input[value="ADD ROW"]')
